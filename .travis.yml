@@ -4,7 +4,7 @@ node_js:
 before_script:
   - npm install -g tiddlywiki
 script: tiddlywiki ./*wiki --build
-
+script: tiddlywiki --version
 after_success:
   - bash ./publish.sh
 
